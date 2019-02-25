@@ -25,7 +25,7 @@ Eternal Darkness, created with C++, OpenGL, [imgui](https://github.com/ocornut/i
 ### Game Programming Requirements (40%):
 
  7% - Game rules/Physics
-  - Hunger system (for some reason, my textrenderer will interfere with my game scene, so I didn't draw the HUD texts)
+  - Hunger system
   - Collect things (pick up, small blue cubes are apples, green cubes are mushrooms), Break stuff (trees are breakable), both inherited from Interactable, using raycast to detect them within a certain reach.
   - bullet physic engine two feature: Two Point Two Constraint, Ray Test
   - Joints (bridge)
