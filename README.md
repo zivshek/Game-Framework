@@ -63,7 +63,7 @@ Eternal Darkness, created with C++, OpenGL, [imgui](https://github.com/ocornut/i
   ![lighting&fog](../assets/lighting.png)
   
  5% - Rendering to a texture
-  - working, below is a demonstration of one of postprocessing:
+  - working, below is a demonstration of postprocessing:
   ![postprocessing1](../assets/postprocessing1.png)
   
  5% - Cubemaps
@@ -80,7 +80,7 @@ Eternal Darkness, created with C++, OpenGL, [imgui](https://github.com/ocornut/i
 
 
 ### Testing: 5%
-  - ImGui - testing the poisonous condition, below is a demonstration of imgui:
+  - ImGui - testing the poisonous condition, below is a demonstration of using imgui:
   ![imgui](../assets/imgui.png)
   
 
