@@ -1,7 +1,9 @@
 # 18W_FinalProject
-Eternal Darkness, created with C++, OpenGL, imgui, Bullet3, IXAudio2 
+Eternal Darkness, created with C++, OpenGL, [imgui](https://github.com/ocornut/imgui), [Bullet3](https://github.com/bulletphysics/bullet3), [IXAudio2](https://docs.microsoft.com/en-us/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2) 
 
-Techniques: Postprocessing, skybox, multiple lighting, 3D mesh rendering, text rendering, fbx model importing, sound queue, resource management, scene management, event queue, debug draw, tweening, particle system, camera work, JSON file save/load
+**Techniques:** Postprocessing, skybox, multiple lighting, 3D mesh rendering, text rendering, fbx model importing, sound queue, resource management, scene management, event queue, debug draw, tweening, particle system, camera work, JSON file save/load
+
+**Note:** In order to build the project on your machine correctly, you probably would have to retarget the solution to the SDK version that's installed on your machine.
 
 *****************************
   Controls:
@@ -28,7 +30,6 @@ Techniques: Postprocessing, skybox, multiple lighting, 3D mesh rendering, text r
   - bullet physic engine two feature: Two Point Two Constraint, Ray Test
   - Joints (bridge)
   - Player character only moves to the direction of the camera.
-
   
  3% - Audio
   - Audio queues
@@ -36,13 +37,13 @@ Techniques: Postprocessing, skybox, multiple lighting, 3D mesh rendering, text r
   - One-time sounds
 
  3% - Saved game
-  - Save survived time
-  - Save volume
-  - Automatically save while closing game.
+  - Saves survived time
+  - Saves volume
+  - Automatically saves while closing game.
 
  4% - Scene management
   - HUD will be drawn with game scene.
-  - Total of 7 scenes working, dead scene not working~ will break for some reason, so we didn't put it in.
+  - Total of 7 scenes working, dead scene not working~ will break for some reason, didn't put it in.
  
  3% - Tweening
   - Menu items
@@ -58,13 +59,16 @@ Techniques: Postprocessing, skybox, multiple lighting, 3D mesh rendering, text r
 ### Graphics Requirements (35%):
 
 10% - Lighting
-  - Multiple lighting, share functions between shaders, on and off functionality 
+  - Multiple lighting, share functions between shaders, on and off functionality, below is a demonstration of spot light, directional light, and fog effect:
+  ![lighting&fog](../assets/lighting.png)
   
  5% - Rendering to a texture
-  - working
+  - working, below is a demonstration of one of postprocessing:
+  ![postprocessing1](../assets/postprocessing1.png)
   
  5% - Cubemaps
-  - 2 cube maps for 2 levels
+  - 2 cube maps for 2 levels, below is a demonstration of one of the skyboxes:
+  ![skybox](../assets/skybox.png)
   
 10% - Polish
   - Add fog effect.
@@ -76,5 +80,7 @@ Techniques: Postprocessing, skybox, multiple lighting, 3D mesh rendering, text r
 
 
 ### Testing: 5%
-  - ImGui - testing the poisonous condition
+  - ImGui - testing the poisonous condition, below is a demonstration of imgui:
+  ![imgui](../assets/imgui.png)
+  
 
