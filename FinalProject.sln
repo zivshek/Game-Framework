@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "Game\Game.vcxproj", "{48AF2354-9C8B-482A-BA77-C703F2CB1724}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF} = {A434E80C-1049-10BE-D9CA-B31D459E0CEF}
+		{AD82F95E-C422-7443-A26D-57999762CED9} = {AD82F95E-C422-7443-A26D-57999762CED9}
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E} = {5E81B361-BFF0-A443-A143-44C7B2164E8E}
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0} = {1BD50A98-FB78-7F43-84A9-82901F5A00D0}
+		{FA3038A4-9635-42C3-8411-54419746666C} = {FA3038A4-9635-42C3-8411-54419746666C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework", "Libraries\Framework\Framework.vcxproj", "{FA3038A4-9635-42C3-8411-54419746666C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Box2D", "Libraries\Framework\Libraries\Box2D\Build\vs2017\Box2D.vcxproj", "{A434E80C-1049-10BE-D9CA-B31D459E0CEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Physics", "Physics", "{10CEBAAF-F729-4932-8A67-1D0F8CE1B1D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BulletCollision", "Libraries\BulletCollision.vcxproj", "{1BD50A98-FB78-7F43-84A9-82901F5A00D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BulletDynamics", "Libraries\BulletDynamics.vcxproj", "{AD82F95E-C422-7443-A26D-57999762CED9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearMath", "Libraries\LinearMath.vcxproj", "{5E81B361-BFF0-A443-A143-44C7B2164E8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48AF2354-9C8B-482A-BA77-C703F2CB1724}.Debug|x86.ActiveCfg = Debug|Win32
+		{48AF2354-9C8B-482A-BA77-C703F2CB1724}.Debug|x86.Build.0 = Debug|Win32
+		{48AF2354-9C8B-482A-BA77-C703F2CB1724}.Release|x86.ActiveCfg = Release|Win32
+		{48AF2354-9C8B-482A-BA77-C703F2CB1724}.Release|x86.Build.0 = Release|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Debug|x86.ActiveCfg = Debug|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Debug|x86.Build.0 = Debug|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Release|x86.ActiveCfg = Release|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Release|x86.Build.0 = Release|Win32
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Debug|x86.ActiveCfg = Debug|Win32
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Debug|x86.Build.0 = Debug|Win32
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Release|x86.ActiveCfg = Release|Win32
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Release|x86.Build.0 = Release|Win32
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0}.Debug|x86.ActiveCfg = Debug|Win32
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0}.Debug|x86.Build.0 = Debug|Win32
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0}.Release|x86.ActiveCfg = Release|Win32
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0}.Release|x86.Build.0 = Release|Win32
+		{AD82F95E-C422-7443-A26D-57999762CED9}.Debug|x86.ActiveCfg = Debug|Win32
+		{AD82F95E-C422-7443-A26D-57999762CED9}.Debug|x86.Build.0 = Debug|Win32
+		{AD82F95E-C422-7443-A26D-57999762CED9}.Release|x86.ActiveCfg = Release|Win32
+		{AD82F95E-C422-7443-A26D-57999762CED9}.Release|x86.Build.0 = Release|Win32
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E}.Debug|x86.ActiveCfg = Debug|Win32
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E}.Debug|x86.Build.0 = Debug|Win32
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E}.Release|x86.ActiveCfg = Release|Win32
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF} = {10CEBAAF-F729-4932-8A67-1D0F8CE1B1D6}
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0} = {10CEBAAF-F729-4932-8A67-1D0F8CE1B1D6}
+		{AD82F95E-C422-7443-A26D-57999762CED9} = {10CEBAAF-F729-4932-8A67-1D0F8CE1B1D6}
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E} = {10CEBAAF-F729-4932-8A67-1D0F8CE1B1D6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86501884-22B0-4454-8979-E38026208AAC}
+	EndGlobalSection
+EndGlobal

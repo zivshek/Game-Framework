@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{d4dc2ed3-3af2-49dc-ab58-85e167601a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Shaders">
+      <UniqueIdentifier>{88fe26c9-2a76-4701-8e99-31e64dc3f2de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Common">
+      <UniqueIdentifier>{4c03fd4a-4ce5-4242-80f6-0df6d03bdc3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Common\Main">
+      <UniqueIdentifier>{55dc1b96-bc8c-45fc-8dce-5c0ce37d9694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Common\Memory">
+      <UniqueIdentifier>{4c93d17d-6f0c-4f5b-b8fa-c61b5d60fe4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game">
+      <UniqueIdentifier>{d07083e1-f7ab-4514-9399-0045e8656362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects">
+      <UniqueIdentifier>{96f9ac06-1467-49e5-a66a-ff56f110e41d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Base">
+      <UniqueIdentifier>{f493b7de-66a1-43ee-9d79-eba98a33367f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Mesh">
+      <UniqueIdentifier>{a1fadd2c-1c68-43ed-8701-95bd10046644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Physics">
+      <UniqueIdentifier>{931c8630-132b-4b1f-9fdf-1d481a5516e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Scenes">
+      <UniqueIdentifier>{3e5687d3-2418-41f3-a784-fbf322a73bf1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\GamePCH.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\CameraObject.cpp">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\GameObject.cpp">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\PlayerController.cpp">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\ResourceManager.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Scene.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Mesh\Mesh.cpp">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Mesh\MeshShapes.cpp">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\PlayerObject.cpp">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Game.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Main\ImguiManager.cpp">
+      <Filter>Source\Common\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Main\WinMain.cpp">
+      <Filter>Source\Common\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Memory\Memory.cpp">
+      <Filter>Source\Common\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\BulletWorld.cpp">
+      <Filter>Source\Game\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\SceneManager.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\TextRenderer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\GameScene_Level1.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Audio\SoundPlayerXAudio.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Audio\WaveLoader.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\MyDebugDraw.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\EulerAngle.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ParticleSystem\ParticleEmitter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ParticleSystem\ParticleRenderer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\TweenFuncs.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\FBODefinition.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\Scene_MainMenu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\Interactable.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\Pickup.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\Breakable.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\Pickup_Apple.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\Pickup_Mushroom.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\TweenObject.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Audio\SoundQueue.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\Scene_Option.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\Scene_Hud.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\GameScene_Level2.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\Scene_Inventory.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\Dead_Scene.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\Scene_Level.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\Breakable_Tree.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\GamePCH.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\CameraObject.h">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\GameObject.h">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\PlayerController.h">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\ResourceManager.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Scene.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Mesh\Mesh.h">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Mesh\VertexFormat.h">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\PlayerObject.h">
+      <Filter>Source\Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Mesh\Material.h">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Game.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Main\ImguiManager.h">
+      <Filter>Source\Common\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Main\WinMain.h">
+      <Filter>Source\Common\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Memory\CPPList.h">
+      <Filter>Source\Common\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Memory\Memory.h">
+      <Filter>Source\Common\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\BulletWorld.h">
+      <Filter>Source\Game\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\SceneManager.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\TextRenderer.h" />
+    <ClInclude Include="Source\Game\Scenes\GameScene_Level1.h" />
+    <ClInclude Include="Source\Game\Audio\SoundPlayerXAudio.h" />
+    <ClInclude Include="Source\Game\Audio\WaveLoader.h" />
+    <ClInclude Include="Source\Game\GameObjects\Light.h" />
+    <ClInclude Include="Source\Game\Base\MyDebugDraw.h" />
+    <ClInclude Include="Source\Game\Base\EulerAngle.h" />
+    <ClInclude Include="Source\ParticleSystem\Particle.h" />
+    <ClInclude Include="Source\ParticleSystem\ParticleEmitter.h" />
+    <ClInclude Include="Source\ParticleSystem\ParticleRenderer.h" />
+    <ClInclude Include="Source\Game\Base\TweenFuncs.h" />
+    <ClInclude Include="Source\Game\Base\FBODefinition.h" />
+    <ClInclude Include="Source\Game\Scenes\Scene_MainMenu.h" />
+    <ClInclude Include="Source\Game\GameObjects\Interactable.h" />
+    <ClInclude Include="Source\Game\GameObjects\Pickup.h" />
+    <ClInclude Include="Source\Game\GameObjects\Breakable.h" />
+    <ClInclude Include="Source\Game\Events\GameEvents.h" />
+    <ClInclude Include="Source\Game\Events\GameEvent_Destroy.h" />
+    <ClInclude Include="Source\Game\GameObjects\Pickup_Apple.h" />
+    <ClInclude Include="Source\Game\GameObjects\Pickup_Mushroom.h" />
+    <ClInclude Include="Source\Game\Base\TweenObject.h" />
+    <ClInclude Include="Source\Game\Audio\SoundQueue.h" />
+    <ClInclude Include="Source\Game\Scenes\Scene_Option.h" />
+    <ClInclude Include="Source\Game\Scenes\Scene_Hud.h" />
+    <ClInclude Include="Source\Game\Scenes\GameScene_Level2.h" />
+    <ClInclude Include="Source\Game\Scenes\Scene_Inventory.h" />
+    <ClInclude Include="Source\Game\Scenes\Dead_Scene.h" />
+    <ClInclude Include="Source\Game\Scenes\Scene_Level.h" />
+    <ClInclude Include="Source\Game\GameObjects\Breakable_Tree.h" />
+  </ItemGroup>
+</Project>

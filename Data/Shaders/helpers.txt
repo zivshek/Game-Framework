@@ -1,0 +1,110 @@
+#define MAX_LIGHTS 10
+
+uniform struct Light
+{
+	vec3 position;
+	vec3 color;
+	float ambient;
+	float coneAngle;
+	vec3 coneDirection;
+
+	float linear;
+	float quadratic;
+	
+	bool on;
+	bool flicker;
+};
+
+ struct Material
+{
+	sampler2D texture;
+	float shininess;
+	vec3 specular;
+};
+
+vec3 GetDirectionAToB(vec3 A, vec3 B)
+{
+	return B - A;
+}
+
+vec3 GetAmbientColor(float lightAmbient, vec3 surfaceColor)
+{
+	return surfaceColor * lightAmbient;
+}
+
+float GetAttenuation(vec3 v, float linear, float quadratic)
+{
+	float len = length(v);
+	// F(atten) = 1.0/ (Kc + Kl * d + Kq * d * d)
+	// Range Constant Linear Quadratic Table see http://wiki.ogre3d.org/-Point+Light+Attenuation
+	return 1.0/(1 + len * linear + quadratic * len * len);
+}
+
+vec3 GetDiffuseColor(vec3 lightColor, vec3 surfaceColor, vec3 directionTowardsLight, vec3 normal, float attenuation)
+{
+	directionTowardsLight = normalize(directionTowardsLight);
+	normal = normalize(normal);
+	float diffusePerc = max(dot(directionTowardsLight, normal), 0);
+	return lightColor * surfaceColor * diffusePerc * attenuation;
+}
+
+vec3 GetSpecularColor(vec3 materialSpecular, float materialShininess, vec3 directionTowardsLight, vec3 directionTowardsCamera, vec3 normal, float attenuation)
+{
+	directionTowardsCamera = normalize(directionTowardsCamera);
+	vec3 specularLightVector = directionTowardsCamera + directionTowardsLight;
+	specularLightVector = normalize(specularLightVector);
+	normal = normalize(normal);
+	float specularPerc = max(dot(specularLightVector, normal), 0);
+	specularPerc = pow(specularPerc, materialShininess);
+
+	return materialSpecular * specularPerc * attenuation;
+}
+
+vec3 CalculateLightColor(Light light, Material material, vec3 surfaceColor, vec3 surfaceWorldPos, vec3 camPos, vec3 normal, float time)
+{
+	float attenuation = 1.0;
+	vec3 directionTowardsLight;
+		
+	float flickerFactor = 0;
+
+	// This is wrong, but for simplicity, if the light is at 0,0,0, that means this is a directional light
+	// which basically means, you can't create a light at 0,0,0. I can set a flag instead, by I don't want to.
+	if (light.position == vec3(0,0,0))
+	{
+		directionTowardsLight = normalize(light.coneDirection);
+		// No attenuation
+		attenuation = 0.1;
+	}
+	else
+	{
+		// Point light
+		directionTowardsLight = GetDirectionAToB(surfaceWorldPos, light.position);
+		attenuation = GetAttenuation(directionTowardsLight, light.linear, light.quadratic);
+
+		// Spot light
+		if(light.coneAngle != 0)
+		{
+			float lightToSurfaceAngle = degrees(acos(dot(normalize(-directionTowardsLight), normalize(light.coneDirection))));
+			if (lightToSurfaceAngle > light.coneAngle) 
+			{
+				attenuation = 0.0;
+			}
+		}
+	}
+
+	vec3 ambientColor = GetAmbientColor(light.ambient, surfaceColor);
+	
+	vec3 diffuseColor = GetDiffuseColor(light.color, surfaceColor, directionTowardsLight, normal, attenuation);
+	
+	vec3 directionTowardsCamera = GetDirectionAToB(surfaceWorldPos, camPos);
+	vec3 specularColor = GetSpecularColor(material.specular, material.shininess, directionTowardsLight, directionTowardsCamera, normal, attenuation);
+	
+	// Flicker effect
+	if(light.flicker)
+	{
+		flickerFactor = ((sin(time * 50) + 1) / 2) * 0.1;
+	}
+		
+	// Apply ambient, diffuse, and specular effects, as well as flicker
+	return (ambientColor + diffuseColor + specularColor)*(1 + flickerFactor);
+}
