@@ -59,6 +59,8 @@ void Scene_Hud::DrawTexts()
 
 	std::string hunger = std::to_string(m_Hunger) + "/" + std::to_string(m_pPlayer->GetMaxHunger()) + " Hunger";
 	m_pTextRenderer->printText2D(hunger.c_str(), 100, 445, 16, 20, 0);
+
+    //m_pTextRenderer->printText2D("sdjkfksjkjfasjkfjksadkljfjlkdlkjlkjfalkjdflkjlkjafdlkjfdfkljds", 100, 445, 16, 20, 0);
 }
 
 
