@@ -21,56 +21,50 @@ Eternal Darkness, created with C++, OpenGL, [imgui](https://github.com/ocornut/i
      - 'P' to open imGui window.
 *****************************
 
-
-### Game Programming Requirements (40%):
-
- 7% - Game rules/Physics
+- Game rules/Physics
   - Hunger system
   - Collect things (pick up, small blue cubes are apples, green cubes are mushrooms), Break stuff (trees are breakable), both inherited from Interactable, using raycast to detect them within a certain reach.
   - bullet physic engine two feature: Two Point Two Constraint, Ray Test
   - Joints (bridge)
   - Player character only moves to the direction of the camera.
   
- 3% - Audio
+- Audio
   - Audio queues
   - Looping sounds
   - One-time sounds
 
- 3% - Saved game
+- Saved game
   - Saves survived time
   - Saves volume
   - Automatically saves while closing game.
 
- 4% - Scene management
+- Scene management
   - HUD will be drawn with game scene.
   - Total of 7 scenes working, dead scene not working~ will break for some reason, didn't put it in.
  
- 3% - Tweening
+- Tweening
   - Menu items
 
-10% - Polish
+- Polish
   - FPS counter
   - Mouse control(turn camera around)
   - Inventory part 1 (logic)
   - Randomly generated world
   - Interactable things (nice hierarchy: GameObject->Interactable->Pickup/Breakable->Concrete Pickups/Breakables) using raytest
-  
-     
-### Graphics Requirements (35%):
 
-10% - Lighting
+- Lighting
   - Multiple lighting, share functions between shaders, on and off functionality, below is a demonstration of spot light, directional light, and fog effect:
   ![lighting&fog](../assets/lighting.png)
   
- 5% - Rendering to a texture
+- Rendering to a texture
   - working, below is a demonstration of postprocessing:
   ![postprocessing1](../assets/postprocessing1.png)
   
- 5% - Cubemaps
+- Cubemaps
   - 2 cube maps for 2 levels, below is a demonstration of one of the skyboxes:
   ![skybox](../assets/skybox.png)
   
-10% - Polish
+- Polish
   - Add fog effect.
   - Rendering to a texture for each scene, so postprocessing won't affect scenes other than game scenes
   - Text rendering
@@ -78,9 +72,7 @@ Eternal Darkness, created with C++, OpenGL, [imgui](https://github.com/ocornut/i
   - debug draw set up, but not done
   - Inventory part 2 (displaying apple and mushroom upon picking up)
 
-
-### Testing: 5%
-  - ImGui - testing the poisonous condition, below is a demonstration of using imgui:
+- ImGui - testing the poisonous condition, below is a demonstration of using imgui:
   ![imgui](../assets/imgui.png)
   
 
