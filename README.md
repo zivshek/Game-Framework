@@ -1,7 +1,7 @@
-# 18W_FinalProject
+# Student project - 18W_FinalProject
 Eternal Darkness, created with C++, OpenGL, [imgui](https://github.com/ocornut/imgui), [Bullet3](https://github.com/bulletphysics/bullet3), [IXAudio2](https://docs.microsoft.com/en-us/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2) 
 
-**Techniques:** Postprocessing, skybox, multiple lighting, 3D mesh rendering, text rendering, fbx model importing, sound queue, resource management, scene management, event queue, debug draw, tweening, particle system, camera work, JSON file save/load
+**Tech Stack:** Postprocessing, skybox, multiple lighting, 3D mesh rendering, text rendering, fbx model importing, sound queue, resource management, scene management, event queue, debug draw, tweening, particle system, camera work, JSON file save/load
 
 **Note:** In order to build the project on your machine correctly, you probably would have to retarget the solution to the SDK version that's installed on your machine.
 
