@@ -57,11 +57,11 @@ Eternal Darkness, created with C++, OpenGL, [imgui](https://github.com/ocornut/i
   ![lighting&fog](../assets/lighting.png)
   
 - Rendering to a texture
-  - working, below is a demonstration of postprocessing:
+  - postprocessing:
   ![postprocessing1](../assets/postprocessing1.png)
   
 - Cubemaps
-  - 2 cube maps for 2 levels, below is a demonstration of one of the skyboxes:
+  - 2 cube maps (skybox) for 2 levels:
   ![skybox](../assets/skybox.png)
   
 - Polish
@@ -72,7 +72,7 @@ Eternal Darkness, created with C++, OpenGL, [imgui](https://github.com/ocornut/i
   - debug draw set up, but not done
   - Inventory part 2 (displaying apple and mushroom upon picking up)
 
-- ImGui - testing the poisonous condition, below is a demonstration of using imgui:
+- ImGui - testing the poisoned condition:
   ![imgui](../assets/imgui.png)
   
 
